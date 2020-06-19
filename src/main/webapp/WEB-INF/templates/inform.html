@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table >
+    <thead>
+    <tr>
+        <th>Language</th>
+        <th>Page Size</th>
+        <th>Signature</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td th:text="${emailSetting.getLanguage()}"></td>
+        <td th:text="${emailSetting.getPageSize()}"></td>
+        <td th:text="${emailSetting.getSignature()}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

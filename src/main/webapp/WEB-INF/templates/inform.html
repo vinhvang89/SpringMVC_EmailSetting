@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="https://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+<head th:replace="/layout :: head">
 </head>
 <body>
-<table >
-    <thead>
-    <tr>
-        <th>Language</th>
-        <th>Page Size</th>
-        <th>Signature</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td th:text="${emailSetting.getLanguage()}"></td>
-        <td th:text="${emailSetting.getPageSize()}"></td>
-        <td th:text="${emailSetting.getSignature()}"></td>
-    </tr>
-    </tbody>
+<div>
+    <table >
+        <thead>
+        <tr>
+            <th>Language</th>
+            <th>Page Size</th>
+            <th>Signature</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td th:text="${emailSetting.getLanguage()}"></td>
+            <td th:text="${emailSetting.getPageSize()}"></td>
+            <td th:text="${emailSetting.getSignature()}"></td>
+        </tr>
+        </tbody>
+
+</div>
 </table>
+<footer th:replace="/layout :: footer">
+</footer>
 </body>
 </html>
